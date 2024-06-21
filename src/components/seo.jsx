@@ -41,10 +41,9 @@ export const Seo = ({ title, description, pathname, children }) => {
             {/* <meta property="og:image:width" content="1240" />
             <meta property="og:image:height" content="640" /> */}
             <meta property="og:site_name" content={seo.title} />
-            <meta property="og:type" content="object" />
+            <meta property="og:type" content="website" />
             <meta property="og:title" content={seo.title} />
             <meta property="og:url" content={seo.url} />
-            <meta name="canonical" content={seo.url} />
             <meta property="og:description" content={seo.description} />
             {/* <link rel="canonical" href={seo.url} /> */}
             {children}
