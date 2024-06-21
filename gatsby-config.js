@@ -6,9 +6,9 @@ module.exports = {
         title: `solanasummit-2024`,
         description: `Example project for the Gatsby Head API`,
         twitterUsername: `@gatsbyjs`,
+        image: 'https://faucet.quicknode.com/images/og-solana-testnet.jpg',
         // image: `/gatsby-icon.png`,
         siteUrl: `https://www.yourdomain.tld`,
-        image: 'https://faucet.quicknode.com/images/og-solana-testnet.jpg',
     },
     plugins: [
         'gatsby-plugin-postcss',
