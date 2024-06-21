@@ -31,7 +31,7 @@ export const Seo = ({ title, description, pathname, children }) => {
             <meta name="twitter:description" content={seo.description} />
             <meta name="twitter:image" content={seo.image} />
             <meta name="twitter:creator" content={seo.twitterUsername} />
-            <meta name="twitter:site" content="memefi" />
+            <meta name="twitter:site" content="m3m3f1" />
             <meta name="twitter:description" content={seo.description} />
             <meta name="twitter:creator" content="@memefi" />
             <meta property="og:image" content={seo.image} />
