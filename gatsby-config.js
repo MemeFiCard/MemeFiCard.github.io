@@ -11,6 +11,7 @@ module.exports = {
         image: 'https://faucet.quicknode.com/images/og-solana-testnet.jpg',
     },
     plugins: [
+        `gatsby-plugin-react-helmet`,
         'gatsby-plugin-postcss',
         'gatsby-plugin-styled-components',
         'gatsby-plugin-image',
