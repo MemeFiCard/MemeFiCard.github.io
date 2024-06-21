@@ -7,6 +7,7 @@ export const Seo = ({ title, description, pathname, children }) => {
         description: defaultDescription,
         image,
         siteUrl,
+        site,
         twitterUsername,
     } = useSiteMetadata()
 
@@ -14,9 +15,10 @@ export const Seo = ({ title, description, pathname, children }) => {
         title: title || defaultTitle,
         description: description || defaultDescription,
         // image: `${siteUrl}${image}`,
-        image: `${image}`,
+        image: `${image}`, // pending
         url: `${siteUrl}${pathname || ``}`,
         twitterUsername,
+        site,
     }
 
     return (
@@ -31,14 +33,14 @@ export const Seo = ({ title, description, pathname, children }) => {
             <meta name="twitter:description" content={seo.description} />
             <meta name="twitter:image" content={seo.image} />
             <meta name="twitter:creator" content={seo.twitterUsername} />
-            <meta name="twitter:site" content="m3m3f1" />
+            <meta name="twitter:site" content={seo.site} />
             <meta name="twitter:description" content={seo.description} />
-            <meta name="twitter:creator" content="@memefi" />
+            <meta name="twitter:creator" content={seo.twitterUsername} />
             <meta property="og:image" content={seo.image} />
             <meta property="og:image:alt" content={seo.title} />
             {/* <meta property="og:image:width" content="1240" />
             <meta property="og:image:height" content="640" /> */}
-            <meta property="og:site_name" content="QuickNode" />
+            <meta property="og:site_name" content={seo.title} />
             <meta property="og:type" content="object" />
             <meta property="og:title" content={seo.title} />
             <meta property="og:url" content={seo.url} />

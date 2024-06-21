@@ -5,10 +5,11 @@ module.exports = {
     siteMetadata: {
         title: `M3M3F1.XYZ`,
         description: `M3M3F1.XYZ - Pay with SOL, Pay with Mother, Pay with Daddy, Pay with Son`,
-        twitterUsername: `@gatsbyjs`,
+        twitterUsername: `@gatsbyjs`, //pending
         image: 'https://faucet.quicknode.com/images/og-solana-testnet.jpg',
         // image: `/gatsby-icon.png`,
         siteUrl: `https://www.yourdomain.tld`,
+        site: 'm3m3f1',
     },
     plugins: [
         `gatsby-plugin-react-helmet`,
