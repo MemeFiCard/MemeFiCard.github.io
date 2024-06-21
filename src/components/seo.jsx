@@ -15,7 +15,7 @@ export const Seo = ({ title, description, pathname, children }) => {
         title: title || defaultTitle,
         description: description || defaultDescription,
         // image: `${siteUrl}${image}`,
-        image: `${image}`, // pending
+        image: `${siteUrl}${image}`, // pending
         url: `${siteUrl}${pathname || ``}`,
         twitterUsername,
         site,
@@ -23,10 +23,10 @@ export const Seo = ({ title, description, pathname, children }) => {
 
     return (
         <>
-            {/* <title>{seo.title}</title>
+            <title>{seo.title}</title>
             <meta name="description" content={seo.description} />
-            <meta name="image" content={seo.image} /> */}
-            {/* <meta name="twitter:card" content="summary_large_image" />
+            <meta name="image" content={seo.image} />
+            <meta name="twitter:card" content="summary_large_image" />
             <meta name="twitter:title" content={seo.title} />
             <meta name="twitter:url" content={seo.url} />
             <meta name="twitter:description" content={seo.description} />
@@ -36,14 +36,13 @@ export const Seo = ({ title, description, pathname, children }) => {
             <meta name="twitter:description" content={seo.description} />
             <meta name="twitter:creator" content={seo.twitterUsername} />
             <meta property="og:image" content={seo.image} />
-            <meta property="og:image:alt" content={seo.title} /> */}
-            {/* <meta property="og:site_name" content={seo.title} />
+            <meta property="og:image:alt" content={seo.title} />
+            <meta property="og:site_name" content={seo.title} />
             <meta property="og:type" content="website" />
             <meta property="og:title" content={seo.title} />
             <meta property="og:url" content={seo.url} />
-            <meta property="og:description" content={seo.description} /> */}
-            {/* <link rel="canonical" href={seo.url} /> */}
-
+            <meta property="og:description" content={seo.description} />
+            {/* 
             <title>VotingDAO - The largest decentralized voting</title>
             <meta
                 name="title"
@@ -83,7 +82,7 @@ export const Seo = ({ title, description, pathname, children }) => {
             <meta
                 property="twitter:image"
                 content="https://votingdao-nft-assets.s3.ap-southeast-1.amazonaws.com/Proof-of-Vote-static.jpg"
-            />
+            /> */}
             {children}
         </>
     )

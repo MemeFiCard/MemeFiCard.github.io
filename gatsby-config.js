@@ -6,8 +6,8 @@ module.exports = {
         title: `M3M3F1.XYZ`,
         description: `M3M3F1.XYZ - Pay with SOL, Pay with Mother, Pay with Daddy, Pay with Son`,
         twitterUsername: `@gatsbyjs`, //pending
-        image: 'https://faucet.quicknode.com/images/og-solana-testnet.jpg',
-        // image: `/preview.jpg`,
+        // image: 'https://faucet.quicknode.com/images/og-solana-testnet.jpg',
+        image: `/preview.jpg`,
         siteUrl: `https://memeficard.github.io`,
         site: 'm3m3f1',
     },
@@ -19,13 +19,13 @@ module.exports = {
         'gatsby-plugin-react-helmet',
         'gatsby-plugin-sharp',
         'gatsby-transformer-sharp',
-        {
-            resolve: 'gatsby-source-filesystem',
-            options: {
-                name: 'images',
-                path: './src/images/',
-            },
-            __key: 'images',
-        },
+        // {
+        //     resolve: 'gatsby-source-filesystem',
+        //     options: {
+        //         name: 'images',
+        //         path: './src/images/',
+        //     },
+        //     __key: 'images',
+        // },
     ],
 }
