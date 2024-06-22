@@ -1,6 +1,8 @@
 const path = require('path')
 const fs = require('fs')
+const { exec } = require('child_process')
 
+const apexDomain = 'm3m3f1.xyz'
 const buildPath = path.join(__dirname, 'docs')
 
 exports.onPreInit = () => {
@@ -13,4 +15,5 @@ exports.onPreInit = () => {
 
 exports.onPostBuild = () => {
     fs.renameSync(path.join(__dirname, 'public'), path.join(__dirname, 'docs'))
+    exec(`echo '${apexDomain}' > ${buildPath}/CNAME`)
 }

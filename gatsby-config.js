@@ -9,6 +9,8 @@ module.exports = {
         // image: 'https://faucet.quicknode.com/images/og-solana-testnet.jpg',
         image: `/preview.jpg`,
         siteUrl: `https://memeficard.github.io`,
+        // siteUrl: `https://m3m3f1.xyz/`,
+        // siteUrl: `https://solanasummit.memefi.today/`,
         site: 'm3m3f1',
     },
     plugins: [
