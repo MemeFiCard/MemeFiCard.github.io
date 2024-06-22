@@ -26,7 +26,7 @@ const SiteUrl = () => {
 
 const getTwitterLink = (text) =>
     `https://twitter.com/intent/tweet?` +
-    `text=${encodeURI(text)}` +
+    `text=${encodeURIComponent(text)}` +
     `&url=${SiteUrl()}`
 
 const words = ['MOTHER', 'FATHER', 'SON', 'TRUMP', 'DADDY']
@@ -53,11 +53,6 @@ const IndexPage = () => {
                         className="text-4xl font-bold"
                         repeat={Infinity}
                     />
-                </div>
-                <div>
-                    {getTwitterLink(
-                        "I'm early. The only chance to bring your #mother, #father and family to become OG is NOW @m3m3f1"
-                    )}
                 </div>
                 <a
                     href={getTwitterLink(
