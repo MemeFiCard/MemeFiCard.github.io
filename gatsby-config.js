@@ -7,7 +7,7 @@ module.exports = {
         description: `M3M3F1.XYZ - Pay with SOL, Pay with Mother, Pay with Daddy, Pay with Son`,
         twitterUsername: `@gatsbyjs`, //pending
         // image: 'https://faucet.quicknode.com/images/og-solana-testnet.jpg',
-        image: `/preview.jpg`,
+        image: `/preview.jpg?1`,
         siteUrl: `https://memeficard.github.io`,
         // siteUrl: `https://m3m3f1.xyz/`,
         // siteUrl: `https://solanasummit.memefi.today/`,
