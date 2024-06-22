@@ -43,9 +43,15 @@ const IndexPage = () => {
                         repeat={Infinity}
                     />
                 </div>
-                <div className="bg-white text-black text-3xl p-3 cursor-pointer font-bold">
-                    Share Now
-                </div>
+                <a
+                    href="https://twitter.com/intent/tweet?text=Getting+some+Testnet+SOL+at+%40quicknode%27s+faucet+for+my+FJtR3XW7+wallet%21+%0A&url=https%3A%2F%2Ffaucet.quicknode.com%2Fsolana%2Ftestnet%3Futm_source%3Dfaucet%26utm_medium%3Dtwitter%26utm_content%3Dsocial-share%26utm_term%3Dtestnet-sol"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <div className="bg-white text-black text-3xl p-3 cursor-pointer font-bold">
+                        Share Now
+                    </div>
+                </a>
             </div>
             <div className="fixed top-0 left-0 right-0 bottom-0 z-0 blur opacity-50">
                 {Array.from({ length: 5 }).map((_, i) => (
