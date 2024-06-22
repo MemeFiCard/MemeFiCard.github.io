@@ -62,7 +62,7 @@ const IndexPage = () => {
                     rel="noopener noreferrer"
                 >
                     <div className="bg-white text-black text-3xl p-3 cursor-pointer font-bold">
-                        Share Now
+                        I'm early
                     </div>
                 </a>
             </div>
