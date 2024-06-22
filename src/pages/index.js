@@ -3,6 +3,7 @@ import '../styles/global.css'
 import { TypeAnimation } from 'react-type-animation'
 import Marquee from 'react-fast-marquee'
 import { Seo } from '../components/seo'
+import { useSiteMetadata } from '../hooks/use-site-metadata'
 
 function generateCombination(words) {
     // Shuffle the words array
@@ -17,6 +18,16 @@ function generateCombination(words) {
 
     return shuffledWords.join(' ')
 }
+
+const SiteUrl = () => {
+    const { siteUrl } = useSiteMetadata()
+    return siteUrl
+}
+
+const getTwitterLink = (text) =>
+    `https://twitter.com/intent/tweet?` +
+    `text=${encodeURI(text)}` +
+    `&url=${SiteUrl()}`
 
 const words = ['MOTHER', 'FATHER', 'SON', 'TRUMP', 'DADDY']
 
@@ -43,8 +54,15 @@ const IndexPage = () => {
                         repeat={Infinity}
                     />
                 </div>
+                <div>
+                    {getTwitterLink(
+                        "I'm early. The only chance to bring your #mother, #father and family to become OG is NOW @m3m3f1"
+                    )}
+                </div>
                 <a
-                    href="https://twitter.com/intent/tweet?text=Getting+some+Testnet+SOL+at+%40quicknode%27s+faucet+for+my+FJtR3XW7+wallet%21+%0A&url=https%3A%2F%2Ffaucet.quicknode.com%2Fsolana%2Ftestnet%3Futm_source%3Dfaucet%26utm_medium%3Dtwitter%26utm_content%3Dsocial-share%26utm_term%3Dtestnet-sol"
+                    href={getTwitterLink(
+                        "I'm early. The only chance to bring your #mother, #father and family to become OG is NOW @m3m3f1"
+                    )}
                     target="_blank"
                     rel="noopener noreferrer"
                 >
