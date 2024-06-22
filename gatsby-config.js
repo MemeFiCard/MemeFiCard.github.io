@@ -8,8 +8,8 @@ module.exports = {
         twitterUsername: `@gatsbyjs`, //pending
         // image: 'https://faucet.quicknode.com/images/og-solana-testnet.jpg',
         image: `/preview.jpg?1`,
-        siteUrl: `https://memeficard.github.io`,
-        // siteUrl: `https://m3m3f1.xyz/`,
+        // siteUrl: `https://memeficard.github.io`,
+        siteUrl: `https://m3m3f1.xyz/`,
         // siteUrl: `https://solanasummit.memefi.today/`,
         site: 'm3m3f1',
     },
